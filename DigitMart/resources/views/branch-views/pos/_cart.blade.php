@@ -242,7 +242,7 @@ if (session()->get('order_type') == 'home_delivery'){
                 <form action="{{route('branch.pos.tax')}}" method="POST" class="row">
                     @csrf
                     <div class="form-group col-12">
-                        <label for="">{{translate('tax')}} (%)</label>
+                        <label for="">{{translate('GST')}} (%)</label>
                         <input type="number" class="form-control" name="tax" min="0">
                     </div>
 

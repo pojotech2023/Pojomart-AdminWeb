@@ -153,7 +153,7 @@
                                         <span>{{ Helpers::set_symbol($product['price']) }} / {{translate(''.$product['unit'])}}</span>
                                    </div>
                                    <div>
-                                        <strong class="text--title">{{translate('tax')}} :</strong>
+                                        <strong class="text--title">{{translate('GST')}} :</strong>
                                         <span>{{ Helpers::set_symbol(\App\CentralLogics\Helpers::tax_calculate($product,$product['price'])) }}</span>
                                    </div>
                                    <div>

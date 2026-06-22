@@ -135,7 +135,7 @@
                     <dl class="row text-right justify-content-center">
                         <dt class="col-6">{{ translate('Items Price') }}:</dt>
                         <dd class="col-6">{{ Helpers::set_symbol($subTotal) }}</dd>
-                        <dt class="col-6">{{translate('Tax / VAT')}} {{ $vatStatus == 'included' ? translate('(included)') : '' }}:</dt>
+                        <dt class="col-6">{{translate('GST')}} {{ $vatStatus == 'included' ? translate('(included)') : '' }}:</dt>
                         <dd class="col-6">{{ Helpers::set_symbol($totalTax) }}</dd>
 
                         <dt class="col-6">{{ translate('Subtotal') }}:</dt>

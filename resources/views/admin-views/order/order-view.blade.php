@@ -269,7 +269,7 @@
                                     </dd>
                                     <dt class="col-6 text-left">
                                         <div class="ml-auto max-w-150px">
-                                            {{translate('TAX')}} / {{translate('VAT')}} {{ $vatStatus == 'included' ? translate('(included)') : '' }}:
+                                            {{translate('GST')}} {{ $vatStatus == 'included' ? translate('(included)') : '' }}:
                                         </div>
                                     </dt>
                                     <dd class="col-6 col-xl-5 pr-5">

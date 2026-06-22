@@ -25,7 +25,7 @@
                             @php($tax_status= \App\CentralLogics\Helpers::get_business_settings('product_vat_tax_status'))
                             <div class="col-md-4 col-sm-6">
                                 <div class="form-group">
-                                    <label class="input-label" for="exampleFormControlInput1">{{translate('Product VAT/TAX Status (Included/Excluded)')}}</label>
+                                    <label class="input-label" for="exampleFormControlInput1">{{translate('Product GST Status (Included/Excluded)')}}</label>
                                     <select name="product_vat_tax_status" class="form-control">
                                         <option value="excluded" {{$tax_status =='excluded'?'selected':''}}>{{translate('excluded')}}</option>
                                         <option value="included" {{$tax_status =='included'?'selected':''}}>{{translate('included')}}</option>

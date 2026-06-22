@@ -131,7 +131,7 @@
                                     <div class="col">
                                         <div class="media">
                                             <div class="media-body">
-                                                <h4 class="mb-1">{{translate('total')}} {{translate('tax')}}</h4>
+                                                <h4 class="mb-1">{{translate('total')}} {{translate('GST')}}</h4>
                                                 <span class="text-danger">
                                                 <i class="tio-trending-up"></i> {{ Helpers::set_symbol(round(abs($totalTax))) }}
                                                 </span>
@@ -247,7 +247,7 @@
                         borderWidth: 3,
                         data: [{{ $sold[1]}}, {{$sold[2]}}, {{$sold[3]}}, {{$sold[4]}}, {{$sold[5]}}, {{$sold[6]}}, {{$sold[7]}}, {{$sold[8]}}, {{$sold[9]}}, {{$sold[10]}}, {{$sold[11]}}, {{$sold[12]}}]
                     }, {
-                        label: "Total Tax",
+                        label: "Total GST",
                         lineTension: .5,
                         borderColor: "#ED4C78",
                         pointBorderColor: "#ED4C78",

@@ -132,7 +132,7 @@ if (session()->get('order_type') == 'home_delivery'){
                     class="tio-edit"></i>
             </button> - {{ Helpers::set_symbol($extraDiscount) }}</dd>
 
-        <dt class="col-sm-6">{{translate('tax')}} {{ \App\CentralLogics\Helpers::get_business_settings('product_vat_tax_status') === 'included'?  '(Included)': ''}} :</dt>
+        <dt class="col-sm-6">{{translate('GST')}} {{ \App\CentralLogics\Helpers::get_business_settings('product_vat_tax_status') === 'included'?  '(Included)': ''}} :</dt>
         <dd class="col-sm-6 text-right">{{ Helpers::set_symbol(round($totalTax,2)) }}</dd>
         <dt class="col-sm-6">{{translate('Delivery Charge')}} :</dt>
         <dd class="col-sm-6 text-right">{{ Helpers::set_symbol(round($deliveryCharge, 2)) }}</dd>
@@ -240,7 +240,7 @@ if (session()->get('order_type') == 'home_delivery'){
                 <form action="{{route('admin.pos.tax')}}" method="POST" class="row">
                     @csrf
                     <div class="form-group col-12">
-                        <label for="">{{translate('tax')}} (%)</label>
+                        <label for="">{{translate('GST')}} (%)</label>
                         <input type="number" class="form-control" name="tax" min="0">
                     </div>
                     <div class="col-sm-12">

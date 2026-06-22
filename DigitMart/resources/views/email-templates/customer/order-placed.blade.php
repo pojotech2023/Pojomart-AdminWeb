@@ -299,7 +299,7 @@ foreach ($socialMediaList as $social) {
                                                                 </tr>
                                                                 <tr>
                                                                     <td style="width: 40%"></td>
-                                                                    <td class="p-1 px-3">{{translate('Tax / VAT')}} {{ $vat_status == 'included' ? translate('(included)') : '' }}:</td>
+                                                                    <td class="p-1 px-3">{{translate('GST')}} {{ $vat_status == 'included' ? translate('(included)') : '' }}:</td>
                                                                     <td class="text-right p-1 px-3">{{ Helpers::set_symbol($total_tax) }}</td>
                                                                 </tr>
                                                                 <tr>
